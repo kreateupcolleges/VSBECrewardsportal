@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>NPR Reward Points Portal</title>
+  <title>VSBEC Reward Points Portal</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -12,7 +12,7 @@
   <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex items-center justify-between px-6 py-4">
       <div class="flex items-center space-x-3">
-        <img src="nprlogo.webp" alt="NPR Logo" class="h-12 w-12">
+        <img src="vsbec_logo.jpg" alt="VSBEC Logo" class="h-12 w-12">
         <h1 class="text-2xl font-bold text-indigo-700">Reward Points Portal</h1>
       </div>
     </div>
@@ -23,9 +23,9 @@
   </div>
 
   <section class="container mx-auto mt-4 px-6">
-  <div class="container mx-auto mt-4 mb-4 px-6  rounded-lg p-3 font-bold bg-orange-50 text-orange-700 border border-orange-500"> 
+  <!-- <div class="container mx-auto mt-4 mb-4 px-6  rounded-lg p-3 font-bold bg-orange-50 text-orange-700 border border-orange-500"> 
     <h1>NOTE: IP2 Balance Points Will Not Be Carried Over to the Next Semester. You Will Start from Zero Reward Points.</h1>
-  </div>
+  </div> -->
     <div class="bg-white shadow-lg rounded-xl p-6">
       <h2 class="text-lg font-semibold flex items-center space-x-2 text-indigo-700 mb-6">
         <i data-lucide="search" class="w-5 h-5"></i>
@@ -37,19 +37,19 @@
           <select id="internalSelect"
             class="w-full border rounded-lg px-3 py-2 h-12 focus:ring-2 focus:ring-indigo-400 focus:outline-none">
             <!-- <option value="IP2">IP2</option> -->
-            <option value="IP1">IP1</option>
+            <option value="IP1">IP</option>
           </select>
         </div>
         <div>
         <label class="block text-sm font-medium mb-1" for="department">
             Register No <span class="text-lg text-red-500"><b>*</b></span>
         </label>
-          <input id="regno" type="text" placeholder="Ex: 583224103000"
+          <input id="regno" type="text" placeholder="Ex: 922525114019"
             class="w-full border rounded-lg px-3 py-2 h-12 focus:ring-2 focus:ring-indigo-400 focus:outline-none" />
         </div>
         <div>
           <label class="block text-sm font-medium mb-1">Email</label>
-          <input id="email" type="text" placeholder="Ex: nameRegNo@nprcolleges.org"
+          <input id="email" type="text" placeholder="Ex: nameRegNo@vsbec.org"
             class="w-full border rounded-lg px-3 py-2 h-12 focus:ring-2 focus:ring-indigo-400 focus:outline-none" />
         </div>
         <div>
@@ -194,7 +194,7 @@
   /***** CONFIG *****/
   const CONFIG = { defaultInternal: "IP1" };
   const SHEETS = {
-    IP1: { id: "1Vp-R0dA9gwccZIW6bNl0eLDjtGa_v-keUaNgcV5Wa74", name: "NPRCET_2024-2028_S4_IP1_RewardsSplit" }
+    IP1: { id: "1GV0zki0rX6MlP9E7WijW7W0qXtBZiXZ1x_94BOOGcMY", name: "VSBKARUR_2025-2029_S2_IP1_RewardsSplit" }
     // IP2: { id: "1iFdUps38F_WUenWc", name: "RewardPoints_All_2ndYears_IP2NPR" }
   };
   CONFIG.INTERNAL_MARKS_SHEETS = {
